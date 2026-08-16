@@ -49,7 +49,7 @@ export interface ProjectItem {
   abstract?: string;
   keyFeatures?: string[];
   technologies: string[];
-  image: 'vorqquentra' | 'techryon' | 'eminsphere' | 'virtualdna' | 'mazecryptx' | 'shieldvision' | 'guardianai' | string;
+  image: 'vorqentra' | 'vorqquentra' | 'techryon' | 'eminsphere' | 'virtualdna' | 'mazecryptx' | 'shieldvision' | 'guardianai' | string;
   accent: string;
   liveUrl?: string;
   github?: string;
@@ -59,7 +59,7 @@ export interface ProjectItem {
 export const projects: ProjectItem[] = [
   {
     num: '01',
-    title: 'Vorqquentra Labs',
+    title: 'Vorqentra Labs',
     subtitle: 'Premium AI Consultancy & Enterprise Intelligence',
     category: 'AI Consultancy / Next.js Platform',
     type: 'showcase',
@@ -71,9 +71,9 @@ export const projects: ProjectItem[] = [
       'Custom Luxury Acoustic Brand Aesthetic & Responsive UI',
     ],
     technologies: ['Next.js', 'React 19', 'GSAP', 'Lenis', 'Tailwind CSS', 'HTML5 Canvas'],
-    image: 'vorqquentra',
+    image: 'vorqentra',
     accent: 'from-amber-500/25 to-yellow-600/10',
-    liveUrl: 'https://www.vorqquentralabs.com',
+    liveUrl: 'https://www.vorquentralabs.com',
     statusBadge: 'Live Platform',
   },
   {

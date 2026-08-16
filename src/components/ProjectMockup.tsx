@@ -20,7 +20,7 @@ interface ProjectMockupProps {
 }
 
 export default function ProjectMockup({ project }: ProjectMockupProps) {
-  const isVorqquentra = project.image === 'vorqquentra';
+  const isVorqentra = project.image === 'vorqentra' || project.image === 'vorqquentra';
   const isTechryon = project.image === 'techryon';
   const isEminsphere = project.image === 'eminsphere';
   const isVirtualDNA = project.image === 'virtualdna';
@@ -33,8 +33,8 @@ export default function ProjectMockup({ project }: ProjectMockupProps) {
       {/* Background grid overlay */}
       <div className="absolute inset-0 grid-bg-fine opacity-25" />
 
-      {/* 1. Vorqquentra Labs Visualization: Acoustic Rosette, Harmonic Rings & Golden Particles */}
-      {isVorqquentra && (
+      {/* 1. Vorqentra Labs Visualization: Acoustic Rosette, Harmonic Rings & Golden Particles */}
+      {isVorqentra && (
         <div className="relative flex h-full w-full items-center justify-center">
           {/* Radial acoustic glow */}
           <div className="absolute h-56 w-56 rounded-full bg-gradient-to-r from-amber-500/20 to-yellow-600/10 blur-3xl animate-pulse" />
