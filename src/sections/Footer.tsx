@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-3 max-w-xs">
             <span className="text-2xl font-bold tracking-tight">
-              SK<span className="text-gradient-accent">.</span>
+              Swapnil Koli<span className="text-gradient-accent">.</span>
             </span>
             <p className="text-sm text-white/40">
               Building digital experiences, one product at a time.

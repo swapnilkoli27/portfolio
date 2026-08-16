@@ -24,8 +24,8 @@ export default function PageLoader() {
             transition={{ duration: 0.4 }}
             className="flex flex-col items-center gap-6"
           >
-            <span className="text-3xl font-bold tracking-tight">
-              SK<span className="text-gradient-accent">.</span>
+            <span className="text-2xl font-bold tracking-tight sm:text-3xl">
+              Swapnil Koli<span className="text-gradient-accent">.</span>
             </span>
             <div className="relative h-px w-32 overflow-hidden bg-white/10">
               <motion.div

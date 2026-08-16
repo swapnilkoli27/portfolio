@@ -43,10 +43,10 @@ export default function Navbar() {
               e.preventDefault();
               handleNavClick('#home');
             }}
-            className="flex items-center gap-1 text-xl font-bold tracking-tight"
+            className="flex items-center gap-1 text-lg font-bold tracking-tight sm:text-xl"
             data-cursor="hover"
           >
-            <span className="text-white">SK</span>
+            <span className="text-white">Swapnil Koli</span>
             <span className="text-gradient-accent">.</span>
           </a>
 
@@ -113,8 +113,8 @@ export default function Navbar() {
               className="absolute right-0 top-0 flex h-full w-[78%] max-w-sm flex-col bg-ink-900 p-6"
             >
               <div className="flex items-center justify-between">
-                <span className="text-xl font-bold">
-                  SK<span className="text-gradient-accent">.</span>
+                <span className="text-lg font-bold">
+                  Swapnil Koli<span className="text-gradient-accent">.</span>
                 </span>
                 <button
                   onClick={() => setMenuOpen(false)}
