@@ -73,7 +73,7 @@ export const projects: ProjectItem[] = [
     technologies: ['Next.js', 'React 19', 'GSAP', 'Lenis', 'Tailwind CSS', 'HTML5 Canvas'],
     image: 'vorqentra',
     accent: 'from-amber-500/25 to-yellow-600/10',
-    liveUrl: 'https://www.vorquentralabs.com',
+    liveUrl: 'https://www.vorqentralabs.com',
     statusBadge: 'Live Platform',
   },
   {
