@@ -227,7 +227,7 @@ export default function Work() {
                 : 'text-white/60 hover:bg-white/5 hover:text-white'
             }`}
           >
-            Live Platforms (3)
+            Live Platforms ({projects.filter((p) => p.type === 'showcase').length})
           </button>
           <button
             type="button"
@@ -239,7 +239,7 @@ export default function Work() {
                 : 'text-white/60 hover:bg-white/5 hover:text-white'
             }`}
           >
-            AI, Security & Systems (3)
+            AI, Security & Systems ({projects.filter((p) => p.type === 'other').length})
           </button>
         </div>
 

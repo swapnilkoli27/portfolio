@@ -49,7 +49,7 @@ export interface ProjectItem {
   abstract?: string;
   keyFeatures?: string[];
   technologies: string[];
-  image: 'vorqquentra' | 'techryon' | 'eminsphere' | 'mazecryptx' | 'shieldvision' | 'guardianai' | string;
+  image: 'vorqquentra' | 'techryon' | 'eminsphere' | 'virtualdna' | 'mazecryptx' | 'shieldvision' | 'guardianai' | string;
   accent: string;
   liveUrl?: string;
   github?: string;
@@ -116,6 +116,27 @@ export const projects: ProjectItem[] = [
   },
   {
     num: '04',
+    title: 'VirtualDNA',
+    subtitle: 'Multi-Modal AI Provenance Platform for Synthetic Media',
+    category: 'AI Provenance / Deepfake Forensics',
+    type: 'other',
+    description: 'A multi-modal AI provenance platform that embeds unique "Digital DNA" into AI-generated media at birth. Combines LSB steganography, 4× SHA-256 hashes, neural feature extraction (ResNet-18, CLIP ViT-B/32, YAMNet), and XAI weighted heatmaps to guarantee court-admissible provenance across images, video, and audio.',
+    abstract: 'VirtualDNA is a multi-modal AI provenance and digital forensics platform engineered to combat the synthetic media and deepfake crisis. By shifting focus from reactive detection to proactive provenance — embedding resilient "Digital DNA" into AI assets at birth — it ensures complete traceability even after aggressive editing, cropping, compression, or format transcoding. The platform deploys 17 combined identity signals across media modalities: LSB steganography, perceptual hashes (pHash DCT 64-bit), deep learning feature vectors (ResNet-18 1000-d, CLIP ViT-B/32, MFCC 20-d, YAMNet 521-cls), and cosine similarity matching with XAI weighted heatmaps. Synced through a multi-modal Global DNA Ledger, VirtualDNA provides court-admissible provenance chains and automated misuse takedown capabilities.',
+    keyFeatures: [
+      'Embed-at-Birth LSB Steganography & 4× SHA-256 Hashes',
+      'Multi-Layer Neural Fingerprinting (ResNet-18, CLIP ViT-B/32, YAMNet)',
+      '17 Combined Resilient Signals Surviving Compression & Transcoding',
+      'Per-Frame Video Tracking (cv2) & Derivative Edit Heatmaps',
+      'Explainable AI (XAI) Weighted Decision Engine & Auto Takedowns',
+    ],
+    technologies: ['Python', 'PyTorch', 'CLIP ViT', 'ResNet-18', 'YAMNet', 'Stable Diffusion', 'OpenCV', 'LSB Steganography', 'MySQL'],
+    image: 'virtualdna',
+    accent: 'from-teal-400/30 to-cyan-600/15',
+    github: 'https://github.com/swapnilkoli27',
+    statusBadge: 'AI Provenance & XAI',
+  },
+  {
+    num: '05',
     title: 'MazeCryptX',
     subtitle: 'Multi-Layer Honeypot & Real-Time Cyberattack Forensics',
     category: 'Cybersecurity / Machine Learning',
@@ -135,7 +156,7 @@ export const projects: ProjectItem[] = [
     statusBadge: 'AI & Cybersecurity',
   },
   {
-    num: '05',
+    num: '06',
     title: 'ShieldVision',
     subtitle: 'Multimodal AI Digital Forensics & Deepfake Detection Platform',
     category: 'Multimodal AI / Explainable AI',
@@ -156,7 +177,7 @@ export const projects: ProjectItem[] = [
     statusBadge: 'Multimodal AI & XAI',
   },
   {
-    num: '06',
+    num: '07',
     title: 'GuardianAI',
     subtitle: 'Intelligent AIoT Wearable Safety Assistant & Caregiver Ecosystem',
     category: 'AIoT / Wearable & Assistive Tech',

@@ -8,7 +8,10 @@ import {
   Layers, 
   Activity,
   Terminal,
-  ScanLine
+  ScanLine,
+  Dna,
+  Fingerprint,
+  FileCheck
 } from 'lucide-react';
 import type { ProjectItem } from '@/data/content';
 
@@ -20,6 +23,7 @@ export default function ProjectMockup({ project }: ProjectMockupProps) {
   const isVorqquentra = project.image === 'vorqquentra';
   const isTechryon = project.image === 'techryon';
   const isEminsphere = project.image === 'eminsphere';
+  const isVirtualDNA = project.image === 'virtualdna';
   const isMazeCryptX = project.image === 'mazecryptx';
   const isShieldVision = project.image === 'shieldvision';
   const isGuardianAI = project.image === 'guardianai';
@@ -121,11 +125,46 @@ export default function ProjectMockup({ project }: ProjectMockupProps) {
         </div>
       )}
 
-      {/* 4. MazeCryptX: Cyber Honeypot Radar, Terminal Code Streams & Threat Matrix */}
+      {/* 4. VirtualDNA: Multi-Modal AI Provenance, DNA Double Helix & Forensic Ledger */}
+      {isVirtualDNA && (
+        <div className="relative flex h-full w-full items-center justify-center">
+          {/* Neon teal/cyan radial glow */}
+          <div className="absolute h-56 w-56 rounded-full bg-gradient-to-r from-teal-400/25 to-cyan-500/20 blur-3xl animate-pulse" />
+
+          {/* DNA helix circular lattice */}
+          <div className="absolute h-52 w-52 rounded-full border border-teal-500/20 animate-[spin_35s_linear_infinite]" />
+          <div className="absolute h-40 w-40 rounded-full border border-dashed border-cyan-400/30 animate-[spin_20s_linear_infinite_reverse]" />
+          <div className="absolute h-24 w-24 rounded-full border border-teal-300/30" />
+
+          {/* Provenance telemetry HUD badges */}
+          <div className="absolute top-5 left-6 flex items-center gap-1.5 text-[9px] font-mono text-teal-300 bg-teal-950/70 px-2.5 py-1 rounded-full border border-teal-500/30 backdrop-blur-sm">
+            <Fingerprint className="h-3 w-3 text-teal-400" />
+            <span>LSB + SHA-256 EMBEDDED</span>
+          </div>
+
+          <div className="absolute bottom-5 right-6 flex items-center gap-1.5 text-[9px] font-mono text-cyan-300 bg-cyan-950/70 px-2.5 py-1 rounded-full border border-cyan-500/30 backdrop-blur-sm">
+            <FileCheck className="h-3 w-3 text-cyan-400" />
+            <span>CLIP ViT · RESNET-18 · YAMNET</span>
+          </div>
+
+          {/* Central DNA Emblem */}
+          <div className="relative flex flex-col items-center gap-3 z-10">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-teal-400/40 bg-teal-950/60 shadow-[0_0_35px_rgba(45,212,191,0.3)] backdrop-blur-md">
+              <Dna className="h-8 w-8 text-teal-300 animate-pulse" />
+            </div>
+            <div className="flex items-center gap-1.5 rounded-full border border-teal-500/30 bg-teal-950/80 px-3 py-0.5 text-[10px] font-mono tracking-widest text-teal-200 uppercase">
+              <span>Multi-Modal Provenance</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. MazeCryptX: Cyber Honeypot Radar, Terminal Code Streams & Threat Matrix */}
       {isMazeCryptX && (
         <div className="relative flex h-full w-full items-center justify-center">
           {/* Crimson glow */}
           <div className="absolute h-56 w-56 rounded-full bg-gradient-to-r from-rose-600/25 to-purple-600/15 blur-3xl" />
+
 
           {/* Radar circle & crosshair */}
           <div className="absolute h-48 w-48 rounded-full border border-rose-500/20" />
