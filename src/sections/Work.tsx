@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight, Github, ExternalLink, Sparkles, ChevronDown, ChevronUp, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, Sparkles, ChevronDown, ChevronUp, CheckCircle2, ShieldCheck } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import { projects, type ProjectItem } from '@/data/content';
 import { useInView } from '@/hooks/useInView';
@@ -10,7 +10,7 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
   const { ref, inView } = useInView({ threshold: 0.1 });
   const [expanded, setExpanded] = useState(false);
   const isLarge = index === 0 || index === 3;
-  const targetUrl = project.liveUrl || project.github || '#';
+  const targetUrl = project.liveUrl || '#';
 
   return (
     <motion.article
@@ -156,22 +156,15 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
               ) : (
-                <div className="inline-flex items-center gap-2 text-xs font-medium text-white/50">
-                  <Sparkles className="h-3.5 w-3.5 text-accent-cyan" />
-                  <span>Research & Production Grade</span>
-                </div>
-              )}
-
-              {project.github && (
                 <a
-                  href={project.github}
+                  href={`https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies!%20I'm%20interested%20in%20learning%20more%20about%20your%20${encodeURIComponent(project.title)}%20project.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.03] px-3.5 py-2.5 text-xs font-medium text-white/70 transition-all hover:border-white/25 hover:bg-white/[0.08] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-xl bg-emerald-500/10 border border-emerald-500/25 px-4 py-2.5 text-xs font-semibold text-emerald-400 transition-all hover:bg-emerald-500 hover:text-white hover:border-emerald-500 shadow-sm"
                 >
-                  <Github className="h-3.5 w-3.5" />
-                  <span>GitHub Repository</span>
+                  <span>Inquire on WhatsApp</span>
+                  <ArrowUpRight className="h-3.5 w-3.5" />
                 </a>
               )}
             </div>

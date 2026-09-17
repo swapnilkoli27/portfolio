@@ -64,7 +64,6 @@ export interface ProjectItem {
   image: 'vorqentra' | 'vorqquentra' | 'techryon' | 'eminsphere' | 'virtualdna' | 'mazecryptx' | 'shieldvision' | 'guardianai' | string;
   accent: string;
   liveUrl?: string;
-  github?: string;
   statusBadge: string;
 }
 
@@ -144,7 +143,6 @@ export const projects: ProjectItem[] = [
     technologies: ['Python', 'PyTorch', 'CLIP ViT', 'ResNet-18', 'YAMNet', 'Stable Diffusion', 'OpenCV', 'LSB Steganography', 'MySQL'],
     image: 'virtualdna',
     accent: 'from-teal-400/30 to-cyan-600/15',
-    github: 'https://github.com/swapnilkoli27',
     statusBadge: 'AI Provenance & XAI',
   },
   {
@@ -164,7 +162,6 @@ export const projects: ProjectItem[] = [
     technologies: ['Python', 'Streamlit', 'Machine Learning', 'Cybersecurity', 'Sandbox Analysis', 'Threat Intelligence'],
     image: 'mazecryptx',
     accent: 'from-rose-600/25 to-purple-600/10',
-    github: 'https://github.com/swapnilkoli27',
     statusBadge: 'AI & Cybersecurity',
   },
   {
@@ -185,7 +182,6 @@ export const projects: ProjectItem[] = [
     technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'Librosa', 'Transformers', 'SHAP', 'LIME', 'Flask', 'MySQL'],
     image: 'shieldvision',
     accent: 'from-purple-600/25 to-pink-500/10',
-    github: 'https://github.com/swapnilkoli27',
     statusBadge: 'Multimodal AI & XAI',
   },
   {
@@ -206,7 +202,6 @@ export const projects: ProjectItem[] = [
     technologies: ['Raspberry Pi 4B', 'ESP32', 'Python', 'OpenCV', 'MobileNet SSD', 'Firebase', 'GPS / GSM', 'SpeechRecognition'],
     image: 'guardianai',
     accent: 'from-cyan-500/25 to-emerald-500/10',
-    github: 'https://github.com/swapnilkoli27',
     statusBadge: 'AIoT & Hardware',
   },
 ];
