@@ -47,7 +47,7 @@ export default function Footer() {
               Ideas to Impact
             </p>
             <p className="text-sm text-white/50 leading-relaxed">
-              We design, develop, and deploy literally any software, custom IT solution, AI model, and embedded IoT system.
+              Architecting next-generation digital products, enterprise software, applied AI, and connected IoT systems.
             </p>
           </div>
 

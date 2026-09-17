@@ -244,7 +244,7 @@ export const process = [
 ];
 
 export const whyWorkWithMe = [
-  { title: 'Limitless Development Scope', description: 'From responsive web and cross-platform mobile apps to desktop software, AI models, and IoT hardware — we build literally anything.' },
+  { title: 'Full-Spectrum Engineering', description: 'From responsive web platforms and cross-platform mobile apps to desktop software, applied AI models, and connected IoT hardware — we architect and ship complete technology solutions.' },
   { title: 'Ideas to Impact', description: 'We focus on tangible outcomes, transforming raw sketches and academic concepts into functional, market-ready products.' },
   { title: 'Hardware + Software Mastery', description: 'Seamless integration between physical microcontrollers (ESP32, Raspberry Pi) and modern cloud dashboards.' },
   { title: 'Design • Develop • Deploy', description: 'End-to-end execution covering UI/UX design, full-stack programming, circuit prototyping, and cloud hosting.' },

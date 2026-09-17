@@ -56,9 +56,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="mt-6 max-w-xl text-base text-white/60 sm:text-lg leading-relaxed"
+              className="mt-6 max-w-xl text-base text-white/70 sm:text-lg leading-relaxed"
             >
-              We build literally any software, IT solution, or IoT hardware. From high-performance <span className="text-white font-medium">Web & Desktop Platforms</span>, native & cross-platform <span className="text-white font-medium">Android & iOS Apps</span>, to cutting-edge <span className="text-white font-medium">AI Models</span> and <span className="text-white font-medium">Smart Embedded IoT Systems</span> — we design, develop, and deploy your vision.
+              End-to-end technology engineering across software and intelligent hardware. We architect scalable <span className="text-white font-medium">Web & Desktop Platforms</span>, native <span className="text-white font-medium">Android & iOS Applications</span>, enterprise <span className="text-white font-medium">Applied AI Models</span>, and <span className="text-white font-medium">Connected IoT Systems</span> — turning ambitious concepts into market-ready realities.
             </motion.p>
 
             {/* CTAs */}
@@ -72,16 +72,51 @@ export default function Hero() {
                 href="https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I%20have%20a%20project%20inquiry%20and%20would%20like%20to%20discuss!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-emerald-400 hover:shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:scale-105"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-emerald-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_4px_25px_rgba(16,185,129,0.35)] transition-all duration-300 hover:bg-emerald-400 hover:shadow-[0_8px_30px_rgba(16,185,129,0.5)] hover:-translate-y-0.5 active:translate-y-0"
                 data-cursor="hover"
               >
-                <MessageCircle className="h-4 w-4" />
-                Chat on WhatsApp
-                <ArrowUpRight className="h-4 w-4" />
+                <MessageCircle className="h-4 w-4 fill-white text-emerald-500" />
+                <span>Connect on WhatsApp</span>
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
-              <MagneticButton href="#work" onClick={scrollToWork} variant="secondary">
-                Explore Solutions & Work
-              </MagneticButton>
+
+              <a
+                href="#work"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToWork();
+                }}
+                className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-7 py-3.5 text-sm font-semibold text-white/90 backdrop-blur-md transition-all duration-300 hover:border-white/30 hover:bg-white/[0.08] hover:text-white hover:-translate-y-0.5"
+                data-cursor="hover"
+              >
+                <span>Explore Solutions & Work</span>
+                <ArrowUpRight className="h-4 w-4 text-white/40 transition-all duration-300 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </motion.div>
+
+            {/* Quick Scope Indicators */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1.1 }}
+              className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 pt-6 border-t border-white/10 text-xs font-mono text-white/50"
+            >
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                <span>Web & Desktop</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                <span>Android & iOS Apps</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-purple-400" />
+                <span>Applied AI & ML</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+                <span>IoT Hardware</span>
+              </div>
             </motion.div>
           </div>
 
