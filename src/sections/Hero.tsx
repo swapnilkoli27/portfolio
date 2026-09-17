@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, ArrowDown } from 'lucide-react';
+import { ArrowUpRight, ArrowDown, MessageCircle } from 'lucide-react';
 import MagneticButton from '@/components/MagneticButton';
 import { usePrefersReducedMotion } from '@/hooks/useMediaQuery';
 
@@ -30,12 +30,12 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex items-center gap-3"
             >
-              <span className="flex items-center gap-2 rounded-full glass px-3 py-1.5 text-xs font-mono uppercase tracking-[0.15em] text-white/60">
+              <span className="flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-mono uppercase tracking-[0.15em] text-white/80 border border-white/10">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
                 </span>
-                Available for freelance projects
+                GrowUnified Technologies · Ideas to Impact
               </span>
             </motion.div>
 
@@ -44,13 +44,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 40, filter: 'blur(10px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-6 text-[clamp(2.5rem,7vw,5.5rem)] font-bold leading-[0.98] tracking-tighter"
+              className="mt-6 text-[clamp(2.5rem,6.5vw,5.2rem)] font-bold leading-[1.0] tracking-tighter"
             >
-              Building Digital
+              We Turn Ideas
               <br />
-              Products That
-              <br />
-              <span className="text-gradient-accent">Make An Impact.</span>
+              Into <span className="text-gradient-accent">Impact.</span>
             </motion.h1>
 
             {/* Supporting text */}
@@ -58,9 +56,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="mt-6 max-w-xl text-base text-white/50 sm:text-lg"
+              className="mt-6 max-w-xl text-base text-white/60 sm:text-lg leading-relaxed"
             >
-              I design and develop modern websites, mobile applications, AI-powered products and custom software for businesses, startups and ambitious ideas.
+              We build literally any software, IT solution, or IoT hardware. From high-performance <span className="text-white font-medium">Web & Desktop Platforms</span>, native & cross-platform <span className="text-white font-medium">Android & iOS Apps</span>, to cutting-edge <span className="text-white font-medium">AI Models</span> and <span className="text-white font-medium">Smart Embedded IoT Systems</span> — we design, develop, and deploy your vision.
             </motion.p>
 
             {/* CTAs */}
@@ -70,12 +68,19 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.9 }}
               className="mt-8 flex flex-wrap items-center gap-4"
             >
-              <MagneticButton href="#contact" onClick={scrollToContact} variant="primary">
-                Start a Project
+              <a
+                href="https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I%20have%20a%20project%20inquiry%20and%20would%20like%20to%20discuss!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-emerald-400 hover:shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:scale-105"
+                data-cursor="hover"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Chat on WhatsApp
                 <ArrowUpRight className="h-4 w-4" />
-              </MagneticButton>
+              </a>
               <MagneticButton href="#work" onClick={scrollToWork} variant="secondary">
-                View My Work
+                Explore Solutions & Work
               </MagneticButton>
             </motion.div>
           </div>

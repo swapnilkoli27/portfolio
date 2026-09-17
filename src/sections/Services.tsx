@@ -62,10 +62,15 @@ function ServiceCard({ service, index }: { service: (typeof services)[number]; i
           </div>
 
           {/* Arrow */}
-          <div className="mt-auto flex items-center gap-2 text-sm text-white/40 transition-colors group-hover:text-white/80">
-            <span>Learn more</span>
-            <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </div>
+          <a
+            href={`https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I'm%20interested%20in%20your%20${encodeURIComponent(service.title)}%20services!`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto flex items-center gap-2 text-xs font-mono text-emerald-400/80 transition-colors group-hover:text-emerald-300"
+          >
+            <span>Inquire on WhatsApp</span>
+            <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
         </div>
       </div>
     </motion.div>
@@ -77,12 +82,13 @@ export default function Services() {
     <section id="services" className="relative py-24 md:py-32">
       <div className="container mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
-          eyebrow="What I Build"
+          eyebrow="Our Full-Spectrum Capabilities"
           title={
             <>
-              Services that <span className="text-gradient-accent">ship.</span>
+              Solutions we <span className="text-gradient-accent">engineer.</span>
             </>
           }
+          subtitle="From web, mobile, and desktop software to AI intelligence and physical IoT hardware — if you can conceive it, we can build it."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -13,10 +13,10 @@ export default function About() {
           {/* Left: heading + text */}
           <div className="lg:col-span-7">
             <SectionHeading
-              eyebrow="About"
+              eyebrow="About GrowUnified Technologies"
               title={
                 <>
-                  More than just <span className="text-gradient-accent">code.</span>
+                  Ideas to <span className="text-gradient-accent">Impact.</span>
                 </>
               }
             />
@@ -24,9 +24,9 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-6 max-w-xl text-base leading-relaxed text-white/50 sm:text-lg"
+              className="mt-6 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg"
             >
-              I'm a freelance software developer focused on building modern digital experiences, intelligent applications and scalable software solutions. I combine development, design and emerging technologies to transform ideas into practical products.
+              At <strong className="text-white font-semibold">GrowUnified Technologies</strong>, we operate across the entire technology spectrum. Whether you need an intuitive mobile app for iOS & Android, an enterprise-grade web or desktop platform, a cutting-edge AI model, or an end-to-end IoT system connecting physical hardware to the cloud — we design, develop, and deploy solutions that deliver measurable impact.
             </motion.p>
           </div>
 

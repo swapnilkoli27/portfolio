@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight, MessageCircle } from 'lucide-react';
 import { navLinks } from '@/data/content';
 import { usePrefersReducedMotion } from '@/hooks/useMediaQuery';
 
@@ -43,11 +43,18 @@ export default function Navbar() {
               e.preventDefault();
               handleNavClick('#home');
             }}
-            className="flex items-center gap-1 text-lg font-bold tracking-tight sm:text-xl"
+            className="flex items-center gap-2.5 text-base font-bold tracking-tight sm:text-lg"
             data-cursor="hover"
           >
-            <span className="text-white">Swapnil Koli</span>
-            <span className="text-gradient-accent">.</span>
+            <img 
+              src="/logo.png" 
+              alt="GrowUnified Technologies Logo" 
+              className="h-8 w-8 rounded-lg object-contain bg-white/10 p-0.5" 
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-white font-extrabold tracking-tight">GrowUnified</span>
+              <span className="text-[9px] font-mono uppercase tracking-widest text-emerald-400 font-semibold">Technologies</span>
+            </div>
           </a>
 
           {/* Desktop nav */}
@@ -72,16 +79,14 @@ export default function Navbar() {
           {/* CTA + mobile toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick('#contact');
-              }}
-              className="hidden items-center gap-1.5 rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-all hover:bg-white/90 md:inline-flex"
+              href="https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I%20have%20a%20project%20inquiry%20and%20would%20like%20to%20discuss!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden items-center gap-2 rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-emerald-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] md:inline-flex"
               data-cursor="hover"
             >
-              Let's Talk
-              <ArrowUpRight className="h-3.5 w-3.5" />
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp
             </a>
             <button
               onClick={() => setMenuOpen(true)}
@@ -113,9 +118,12 @@ export default function Navbar() {
               className="absolute right-0 top-0 flex h-full w-[78%] max-w-sm flex-col bg-ink-900 p-6"
             >
               <div className="flex items-center justify-between">
-                <span className="text-lg font-bold">
-                  Swapnil Koli<span className="text-gradient-accent">.</span>
-                </span>
+                <div className="flex items-center gap-2">
+                  <img src="/logo.png" alt="GrowUnified" className="h-7 w-7 rounded-lg object-contain bg-white/10 p-0.5" />
+                  <span className="text-base font-bold text-white">
+                    GrowUnified<span className="text-emerald-400">.</span>
+                  </span>
+                </div>
                 <button
                   onClick={() => setMenuOpen(false)}
                   className="flex h-10 w-10 items-center justify-center rounded-full glass"
@@ -145,15 +153,13 @@ export default function Navbar() {
               </div>
 
               <a
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick('#contact');
-                }}
-                className="mt-auto flex items-center justify-center gap-2 rounded-full bg-white py-4 font-medium text-black"
+                href="https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I%20have%20a%20project%20inquiry%20and%20would%20like%20to%20discuss!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto flex items-center justify-center gap-2 rounded-full bg-emerald-500 py-4 font-semibold text-white shadow-lg hover:bg-emerald-400 transition-colors"
               >
-                Let's Talk
-                <ArrowUpRight className="h-4 w-4" />
+                <MessageCircle className="h-5 w-5" />
+                Chat on WhatsApp
               </a>
             </motion.div>
           </motion.div>

@@ -41,27 +41,27 @@ export default function FreelanceCTA() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="text-xs font-mono uppercase tracking-[0.2em] text-white/40"
+              className="text-xs font-mono uppercase tracking-[0.2em] text-emerald-400 font-semibold"
             >
-              Have an idea?
+              Ideas to Impact
             </motion.span>
 
             <motion.h2
               initial={{ opacity: 0, y: 30, filter: 'blur(8px)' }}
               animate={inView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
               transition={{ duration: 0.9, delay: 0.1 }}
-              className="text-5xl font-bold leading-[0.95] tracking-tighter sm:text-6xl md:text-7xl"
+              className="text-4xl font-bold leading-[1.0] tracking-tighter sm:text-6xl md:text-7xl"
             >
-              Let's build <span className="text-gradient-accent">it.</span>
+              Ready to create <span className="text-gradient-accent">impact?</span>
             </motion.h2>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="max-w-xl text-base text-white/50 sm:text-lg"
+              className="max-w-xl text-base text-white/60 sm:text-lg leading-relaxed"
             >
-              Whether you need a website, mobile application, AI product or custom software, let's turn your idea into something people can actually use.
+              Whether you need a web app, cross-platform Android/iOS mobile application, desktop software, AI model, or custom IoT hardware — we build it all from concept to launch.
             </motion.p>
 
             <motion.div
@@ -70,16 +70,19 @@ export default function FreelanceCTA() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="mt-4 flex flex-wrap items-center justify-center gap-4"
             >
-              <MagneticButton href="#contact" onClick={scrollToContact} variant="primary">
-                Start a Project
-                <ArrowUpRight className="h-4 w-4" />
-              </MagneticButton>
-              <MagneticButton
-                href="https://wa.me/919146705846"
-                variant="secondary"
+              <a
+                href="https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I%20have%20a%20project%20inquiry%20and%20would%20like%20to%20discuss!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-emerald-400 hover:shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:scale-105"
+                data-cursor="hover"
               >
-                <MessageCircle className="h-4 w-4" />
-                WhatsApp Me
+                <MessageCircle className="h-5 w-5" />
+                Chat on WhatsApp (+91 7057985925)
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+              <MagneticButton href="#work" onClick={() => document.querySelector('#work')?.scrollIntoView({ behavior: 'smooth' })} variant="secondary">
+                View Our Portfolio
               </MagneticButton>
             </motion.div>
           </div>

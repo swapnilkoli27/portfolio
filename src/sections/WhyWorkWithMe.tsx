@@ -35,12 +35,13 @@ export default function WhyWorkWithMe() {
     <section className="relative py-24 md:py-32">
       <div className="container mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
-          eyebrow="Why Work With Me"
+          eyebrow="Why Choose GrowUnified Technologies"
           title={
             <>
-              Built for <span className="text-gradient-accent">results.</span>
+              Engineered for <span className="text-gradient-accent">impact.</span>
             </>
           }
+          subtitle="Any software platform, any tech stack, hardware or AI — we deliver reliable end-to-end solutions."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-x-12 gap-y-2 md:grid-cols-2">

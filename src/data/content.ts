@@ -1,41 +1,53 @@
-import { Code2, Smartphone, BrainCircuit, PenTool, LayoutDashboard, Wrench, ArrowUpRight } from 'lucide-react';
+import { Code2, Smartphone, Monitor, BrainCircuit, Radio, Layers, ArrowUpRight } from 'lucide-react';
+
+export const companyInfo = {
+  name: 'GrowUnified Technologies',
+  shortName: 'GrowUnified',
+  tagline: 'Ideas to Impact',
+  subTagline: 'We Turn Ideas Into Impact',
+  phone: '+91 7057985925',
+  rawPhone: '7057985925',
+  whatsappUrl: 'https://wa.me/917057985925?text=Hi%20GrowUnified%20Technologies,%20I%20have%20a%20project%20inquiry%20and%20would%20like%20to%20discuss!',
+  instagramUrl: 'https://www.instagram.com/grow_unified_technologies/',
+  instagramHandle: '@grow_unified_technologies',
+};
 
 export const services = [
   {
     num: '01',
     title: 'Web Development',
     icon: Code2,
-    description: 'Modern, responsive and high-performance websites and web applications.',
+    description: 'High-performance web apps, SaaS platforms, responsive portals and modern PWAs engineered for speed and scale.',
   },
   {
     num: '02',
-    title: 'Mobile App Development',
+    title: 'Mobile Apps (iOS & Android)',
     icon: Smartphone,
-    description: 'Android and cross-platform applications with polished user experiences.',
+    description: 'Polished cross-platform and native mobile applications for Android and iOS with fluid UI/UX and real-time sync.',
   },
   {
     num: '03',
-    title: 'AI Applications',
-    icon: BrainCircuit,
-    description: 'AI-powered tools, automation, intelligent assistants and machine-learning products.',
+    title: 'Desktop Software',
+    icon: Monitor,
+    description: 'Cross-platform desktop applications built for Windows, macOS, and Linux with native performance and system integration.',
   },
   {
     num: '04',
-    title: 'UI/UX Design',
-    icon: PenTool,
-    description: 'Clean, modern and conversion-focused digital experiences.',
+    title: 'AI & Machine Learning',
+    icon: BrainCircuit,
+    description: 'Applied AI systems, Generative AI, Computer Vision, Deepfake Forensics, NLP, and intelligent neural model deployment.',
   },
   {
     num: '05',
-    title: 'Custom Software',
-    icon: LayoutDashboard,
-    description: 'Business software, dashboards, management systems and custom platforms.',
+    title: 'IoT & Embedded Systems',
+    icon: Radio,
+    description: 'Physical hardware engineering, ESP32, Raspberry Pi, sensor telemetry, smart automation, and cloud-connected IoT dashboards.',
   },
   {
     num: '06',
-    title: 'Website Maintenance',
-    icon: Wrench,
-    description: 'Performance optimization, bug fixing, security updates and continuous improvements.',
+    title: 'Enterprise & Student Innovation',
+    icon: Layers,
+    description: 'Custom full-stack business solutions, startup MVPs, and cutting-edge student innovation/academic R&D projects.',
   },
 ];
 
@@ -200,76 +212,71 @@ export const projects: ProjectItem[] = [
 ];
 
 export const stats = [
-  { value: '30+', label: 'Projects & Systems' },
-  { value: '3', label: 'Commercial Platforms' },
-  { value: 'AI • Cyber • IoT', label: 'Core Domains' },
-  { value: 'Worldwide', label: 'Availability' },
+  { value: '360°', label: 'Tech Capabilities' },
+  { value: 'Web • App • AI', label: 'Software Scope' },
+  { value: 'IoT & Hardware', label: 'Embedded Systems' },
+  { value: 'Ideas to Impact', label: 'Our Mission' },
 ];
 
 export const techStack = [
-  { name: 'React', color: '#61dafb' },
-  { name: 'Next.js', color: '#ffffff' },
-  { name: 'TypeScript', color: '#3178c6' },
-  { name: 'JavaScript', color: '#f7df1e' },
+  { name: 'React & Next.js', color: '#61dafb' },
+  { name: 'Android & iOS (Flutter/React Native)', color: '#3ddc84' },
+  { name: 'Desktop (Electron / Python Qt)', color: '#2b579a' },
   { name: 'Python', color: '#3776ab' },
-  { name: 'TensorFlow / Keras', color: '#ff6f00' },
-  { name: 'OpenCV', color: '#5c3ee8' },
-  { name: 'Explainable AI (SHAP/LIME)', color: '#ec4899' },
-  { name: 'Streamlit', color: '#ff4b4b' },
-  { name: 'Raspberry Pi / ESP32', color: '#c51a4a' },
-  { name: 'Flask / FastAPI', color: '#009688' },
-  { name: 'Node.js', color: '#83cd29' },
-  { name: 'Firebase', color: '#ffca28' },
-  { name: 'MySQL / MongoDB', color: '#4479a1' },
+  { name: 'TypeScript & JS', color: '#3178c6' },
+  { name: 'TensorFlow & PyTorch', color: '#ff6f00' },
+  { name: 'OpenCV & Computer Vision', color: '#5c3ee8' },
+  { name: 'Explainable AI & LLMs', color: '#ec4899' },
+  { name: 'Raspberry Pi & ESP32', color: '#c51a4a' },
+  { name: 'Sensors, GSM & GPS (IoT)', color: '#10b981' },
+  { name: 'FastAPI / Flask / Node.js', color: '#009688' },
+  { name: 'Firebase & Supabase', color: '#ffca28' },
+  { name: 'MySQL & MongoDB', color: '#4479a1' },
   { name: 'Tailwind CSS', color: '#06b6d4' },
-  { name: 'GSAP & Lenis', color: '#88ce02' },
-  { name: 'Vite', color: '#bd34fe' },
-  { name: 'Git & GitHub', color: '#ffffff' },
-  { name: 'Vercel', color: '#ffffff' },
+  { name: 'Cloud & Vercel', color: '#ffffff' },
 ];
 
 export const process = [
-  { num: '01', title: 'DISCOVER', description: 'Understand the business, goals and requirements.' },
-  { num: '02', title: 'DESIGN', description: 'Create the user experience, structure and visual direction.' },
-  { num: '03', title: 'BUILD', description: 'Develop the product using modern technologies and clean architecture.' },
-  { num: '04', title: 'LAUNCH', description: 'Deploy, optimize and provide ongoing support.' },
+  { num: '01', title: 'DISCOVER', description: 'Analyze your vision, technical scope, platform targets, and hardware or software needs.' },
+  { num: '02', title: 'DESIGN', description: 'Architect the complete system flow, circuit/API blueprints, and intuitive modern interfaces.' },
+  { num: '03', title: 'DEVELOP', description: 'Engineer robust code and prototypes using cutting-edge frameworks, models, or microcontrollers.' },
+  { num: '04', title: 'DEPLOY', description: 'Test, package, and launch your solution to app stores, cloud infrastructure, or physical hardware.' },
 ];
 
 export const whyWorkWithMe = [
-  { title: 'Modern Technology', description: 'Using the latest tools and frameworks to build future-ready products.' },
-  { title: 'Clean & Scalable Code', description: 'Maintainable architecture that grows with your business.' },
-  { title: 'Responsive Design', description: 'Pixel-perfect experiences on every device and screen size.' },
-  { title: 'Performance Focused', description: 'Fast load times and optimized experiences that retain users.' },
-  { title: 'AI-Ready Solutions', description: 'Integrating AI capabilities to give your product a competitive edge.' },
-  { title: 'Long-Term Maintenance', description: 'Ongoing support, updates and improvements after launch.' },
-  { title: 'Direct Communication', description: 'No middlemen. You talk directly with the person building your product.' },
-  { title: 'Custom Solutions', description: 'Tailored to your specific needs, never a one-size-fits-all template.' },
+  { title: 'Limitless Development Scope', description: 'From responsive web and cross-platform mobile apps to desktop software, AI models, and IoT hardware — we build literally anything.' },
+  { title: 'Ideas to Impact', description: 'We focus on tangible outcomes, transforming raw sketches and academic concepts into functional, market-ready products.' },
+  { title: 'Hardware + Software Mastery', description: 'Seamless integration between physical microcontrollers (ESP32, Raspberry Pi) and modern cloud dashboards.' },
+  { title: 'Design • Develop • Deploy', description: 'End-to-end execution covering UI/UX design, full-stack programming, circuit prototyping, and cloud hosting.' },
+  { title: 'Startups & Student Innovation', description: 'Specialized support for ambitious founders, business automation, and high-level engineering research projects.' },
+  { title: 'Fast & Direct Execution', description: 'Direct technical collaboration on WhatsApp with zero middlemen delays, agile iterations, and transparent delivery.' },
 ];
 
 export const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'Work', href: '#work' },
   { label: 'Services', href: '#services' },
+  { label: 'Work', href: '#work' },
   { label: 'About', href: '#about' },
   { label: 'Process', href: '#process' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const projectTypes = [
-  'Web Development',
-  'Mobile App',
-  'AI Application',
-  'UI/UX Design',
-  'Custom Software',
-  'Maintenance',
+  'Web Application',
+  'Mobile App (Android / iOS)',
+  'Desktop Software',
+  'AI / Machine Learning System',
+  'IoT & Embedded Hardware Project',
+  'Student / Academic Innovation',
+  'Custom Enterprise IT Solution',
 ];
 
 export const budgetRanges = [
-  '< $1,000',
-  '$1,000 - $5,000',
-  '$5,000 - $10,000',
-  '$10,000+',
-  'Let\'s discuss',
+  'Flexible / Student Project',
+  'Under ₹25,000 / $500',
+  '₹25,000 - ₹1,00,000 / $1k - $3k',
+  '₹1,00,000+ / Enterprise',
+  'Let\'s discuss on WhatsApp',
 ];
 
 export { ArrowUpRight };
