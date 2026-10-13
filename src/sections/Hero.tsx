@@ -28,7 +28,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex items-center gap-3"
+              className="flex flex-wrap items-center gap-2.5"
             >
               <span className="flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-mono uppercase tracking-[0.15em] text-white/80 border border-white/10">
                 <span className="relative flex h-2 w-2">
@@ -36,6 +36,10 @@ export default function Hero() {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
                 </span>
                 GrowUnified Technologies · Ideas to Impact
+              </span>
+              <span className="flex items-center gap-1.5 rounded-full border border-emerald-500/25 bg-emerald-500/10 px-3 py-1.5 text-[10px] font-mono uppercase tracking-wider text-emerald-300 font-semibold shadow-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                REGISTERED UNDER MINISTRY OF MSME, GOVERNMENT OF INDIA
               </span>
             </motion.div>
 

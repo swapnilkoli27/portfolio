@@ -43,7 +43,10 @@ export default function Footer() {
                 </span>
               </div>
             </div>
-            <p className="text-xs font-mono uppercase tracking-widest text-emerald-400/90 font-medium mt-1">
+            <p className="text-[9px] font-mono uppercase tracking-wider text-emerald-400 font-semibold mt-1">
+              REGISTERED UNDER MINISTRY OF MSME, GOVERNMENT OF INDIA
+            </p>
+            <p className="text-xs font-mono uppercase tracking-widest text-emerald-400/80 font-medium">
               Ideas to Impact
             </p>
             <p className="text-sm text-white/50 leading-relaxed">

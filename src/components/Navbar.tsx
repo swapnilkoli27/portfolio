@@ -43,17 +43,22 @@ export default function Navbar() {
               e.preventDefault();
               handleNavClick('#home');
             }}
-            className="flex items-center gap-2.5 text-base font-bold tracking-tight sm:text-lg"
+            className="flex items-center gap-2.5"
             data-cursor="hover"
           >
             <img 
               src="/logo.png" 
               alt="GrowUnified Technologies Logo" 
-              className="h-8 w-8 rounded-lg object-contain bg-white/10 p-0.5" 
+              className="h-9 w-9 rounded-lg object-contain bg-white/10 p-0.5 flex-shrink-0" 
             />
             <div className="flex flex-col leading-tight">
-              <span className="text-white font-extrabold tracking-tight">GrowUnified</span>
-              <span className="text-[9px] font-mono uppercase tracking-widest text-emerald-400 font-semibold">Technologies</span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-white font-extrabold tracking-tight text-base sm:text-lg">GrowUnified</span>
+                <span className="text-[9px] font-mono uppercase tracking-widest text-emerald-400 font-semibold">Technologies</span>
+              </div>
+              <span className="text-[7px] sm:text-[8px] font-mono uppercase tracking-wider text-white/50 font-medium">
+                REGISTERED UNDER MINISTRY OF MSME, GOVERNMENT OF INDIA
+              </span>
             </div>
           </a>
 
@@ -118,11 +123,16 @@ export default function Navbar() {
               className="absolute right-0 top-0 flex h-full w-[78%] max-w-sm flex-col bg-ink-900 p-6"
             >
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <img src="/logo.png" alt="GrowUnified" className="h-7 w-7 rounded-lg object-contain bg-white/10 p-0.5" />
-                  <span className="text-base font-bold text-white">
-                    GrowUnified<span className="text-emerald-400">.</span>
-                  </span>
+                <div className="flex items-center gap-2.5">
+                  <img src="/logo.png" alt="GrowUnified" className="h-8 w-8 rounded-lg object-contain bg-white/10 p-0.5 flex-shrink-0" />
+                  <div className="flex flex-col leading-tight">
+                    <span className="text-base font-bold text-white">
+                      GrowUnified<span className="text-emerald-400">.</span>
+                    </span>
+                    <span className="text-[7.5px] font-mono uppercase tracking-wider text-white/50 font-medium">
+                      REGISTERED UNDER MINISTRY OF MSME, GOVERNMENT OF INDIA
+                    </span>
+                  </div>
                 </div>
                 <button
                   onClick={() => setMenuOpen(false)}
